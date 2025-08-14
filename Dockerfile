@@ -53,5 +53,6 @@ ENV XVFB_OPTIONS "-nolisten unix"
 ENV ELECTRON_ENABLE_LOGGING "false"
 ENV SCRIPT_DEBUG_MODE "false"
 
-ENTRYPOINT [ "/opt/drawio-desktop/entrypoint.sh" ]
-CMD [ "--help" ]
+# Remove auto-start behavior - just make drawio available
+# ENTRYPOINT [ "/opt/drawio-desktop/entrypoint.sh" ]
+# CMD [ "--help" ]
